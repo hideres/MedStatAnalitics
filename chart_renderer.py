@@ -43,7 +43,7 @@ class ChartRenderer:
     @staticmethod
     def render_single_pie(ax, disease_data, region, year_str, center_label, single_mode=False):
         ax.set_axis_off()
-        top_n = 20 if not single_mode else 25
+        top_n = 18 if not single_mode else 22
 
         if len(disease_data) > top_n:
             plot_series = pd.concat(
